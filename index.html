@@ -29,6 +29,9 @@ a.btn:active{transform:scale(.98)}
 .t b{display:block;font:600 16px Inter,sans-serif}
 .t span{display:block;color:var(--mut);font-size:12.5px;margin-top:1px}
 .go{flex:none;color:var(--r3);font:400 20px Inter,sans-serif}
+.tap{width:26px;height:26px;display:grid;place-items:center;color:var(--r3);animation:tapp 1.5s ease-in-out infinite}.tap svg{width:24px;height:24px}
+@keyframes tapp{0%,100%{transform:scale(1);filter:drop-shadow(0 0 0 rgba(201,143,130,0))}50%{transform:scale(1.22);filter:drop-shadow(0 0 7px rgba(201,143,130,.85))}}
+@media(prefers-reduced-motion:reduce){.tap{animation:none}}
 .main{border:0;background:linear-gradient(135deg,#F9DDD3,var(--r2) 52%,#C0877A);color:#3A1F1B;box-shadow:0 14px 30px rgba(184,120,107,.42),inset 0 1px 0 rgba(255,255,255,.7),inset 0 -8px 14px rgba(140,80,70,.18);padding:17px 16px}
 .main::before{content:"";position:absolute;left:0;right:0;top:0;height:46%;background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0));border-radius:16px 16px 60% 60%/16px 16px 22px 22px;pointer-events:none}
 .main .ic{background:#fff;border:0}.main .t b{font-size:17px;color:#3A1F1B}.main .t span{color:#5A312B}.main .go{color:#3A1F1B}
@@ -83,7 +86,7 @@ button.btn{width:100%;font:inherit;text-align:left;cursor:pointer;color:var(--in
 <p class="hold">CNPJ &middot; Bradesco<br>Bruno e Macedo Servi&ccedil;os M&eacute;dicos<br>Consult&oacute;rio Dra. Fernanda Bruno Macedo</p>
 <button class="cp" type="button" id="copy">Copiar chave Pix</button>
 <p class="st" id="st" role="status" aria-live="polite"></p></section>
-<button class="btn" type="button" id="siteBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C98F82" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.7 3.9 5.7 3.9 9s-1.3 6.3-3.9 9c-2.6-2.7-3.9-5.7-3.9-9S9.4 5.7 12 3Z" fill="none" stroke="#C98F82" stroke-width="1.8"/></svg></span><div class="t"><b>Site da Dra. Fernanda</b><span>drafernandabruno.com.br</span></div><span class="go">&rarr;</span></button>
+<button class="btn" type="button" id="siteBtn"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#C98F82" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.7 3.9 5.7 3.9 9s-1.3 6.3-3.9 9c-2.6-2.7-3.9-5.7-3.9-9S9.4 5.7 12 3Z" fill="none" stroke="#C98F82" stroke-width="1.8"/></svg></span><div class="t"><b>Conheça os procedimentos</b><span>Saiba mais sobre a Dra. Fernanda</span></div><span class="go tap"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63l-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.91-1.38z"/></svg></span></button>
 <div class="ov" id="ov" role="dialog" aria-label="Site da Dra. Fernanda Bruno"><div class="ovb"><button type="button" id="ovx">&larr; Voltar</button><a href="https://drafernandabruno.com.br/" target="_blank" rel="noopener">Abrir em nova aba</a></div><iframe id="ovf" title="Site da Dra. Fernanda Bruno" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 <footer class="foot">
 <a class="cta" href="https://wa.me/+5577999735965?text=Ol%C3%A1%21%20Vi%20a%20propaganda%20e%20quero%20a%20minha%20p%C3%A1gina%20de%20links." target="_blank" rel="noopener">Quero minha p&aacute;gina de links</a>
