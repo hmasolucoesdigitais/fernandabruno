@@ -93,9 +93,8 @@ button.btn{width:100%;font:inherit;text-align:left;cursor:pointer;color:var(--in
 <div class="ov" id="ov" role="dialog" aria-label="Site da Dra. Fernanda Bruno"><div class="ovb"><button type="button" id="ovx">&larr; Voltar</button><a href="https://drafernandabruno.com.br/" target="_blank" rel="noopener">Abrir em nova aba</a></div><iframe id="ovf" title="Site da Dra. Fernanda Bruno" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 <p class="copy">&copy; Dra. Fernanda Bruno</p>
 <footer class="foot">
-<p class="c"><b>HMA Solu&ccedil;&otilde;es Digitais</b></p>
-<p class="c ct"><span>WhatsApp 77 99973-5965</span><span>Instagram @digital.hma</span></p>
 <a class="cta" href="https://wa.me/5577999735965?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20da%20Dra%20Fernanda%20Bruno%20e%20gostaria%20de%20saber%20os%20valores" target="_blank" rel="noopener">Quero minha p&aacute;gina de links</a>
+<p class="c"><a class="hmal" href="https://wa.me/5577999735965?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20da%20Dra%20Fernanda%20Bruno%20e%20gostaria%20de%20saber%20os%20valores" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;font-weight:700">HMA Solu&ccedil;&otilde;es Digitais</a></p>
 </footer>
 </main>
 <script>(function(){var b=document.getElementById('copy'),k=document.getElementById('key'),s=document.getElementById('st');
@@ -103,7 +102,7 @@ function sel(){var r=document.createRange();r.selectNodeContents(k);var x=window
 b.addEventListener('click',function(){var t=(k.getAttribute('data-copy')||k.textContent).trim();
 if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){s.textContent='Chave copiada!'}).catch(function(){sel();s.textContent='Chave selecionada, copie manualmente.'})}else{sel();s.textContent='Chave selecionada, copie manualmente.'}});
 var f=document.getElementById('fall');for(var i=0;i<14;i++){var e=document.createElement('i');e.style.left=(Math.random()*100)+'%';e.style.setProperty('--dx',(Math.random()*120-60)+'px');e.style.setProperty('--rt',(Math.random()*540+180)+'deg');e.style.animationDuration=(9+Math.random()*9)+'s';e.style.animationDelay=(-Math.random()*14)+'s';f.appendChild(e)}
-var ac;document.addEventListener('pointerdown',function(ev){if(!ev.target.closest('.btn,.cp,.cta'))return;try{ac=ac||new(window.AudioContext||window.webkitAudioContext)();var o=ac.createOscillator(),g=ac.createGain(),t=ac.currentTime;o.type='triangle';o.frequency.setValueAtTime(2400,t);g.gain.setValueAtTime(.18,t);g.gain.exponentialRampToValueAtTime(.001,t+.02);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+.025)}catch(x){}});
+var ac;document.addEventListener('pointerdown',function(ev){if(!ev.target.closest('.btn,.cp,.cta,.hmal'))return;try{ac=ac||new(window.AudioContext||window.webkitAudioContext)();var o=ac.createOscillator(),g=ac.createGain(),t=ac.currentTime;o.type='triangle';o.frequency.setValueAtTime(2400,t);g.gain.setValueAtTime(.18,t);g.gain.exponentialRampToValueAtTime(.001,t+.02);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+.025)}catch(x){}});
 var ov=document.getElementById('ov'),of=document.getElementById('ovf');document.getElementById('siteBtn').addEventListener('click',function(){window.open('https://drafernandabruno.com.br/','_blank','noopener')});document.getElementById('ovx').addEventListener('click',function(){ov.classList.remove('on');document.body.style.overflow=''});
 var ic=document.querySelector('link[rel=icon]');ic.href=document.querySelector('.av img').src;})();</script>
 </body>
